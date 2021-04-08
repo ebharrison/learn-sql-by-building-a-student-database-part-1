@@ -252,3 +252,6 @@ __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 ls --color=auto
 rm students_test.csv
 rm courses_test.csv
+__vsc_prompt_cmd_original
+ls --color=auto
+ls --color=auto
