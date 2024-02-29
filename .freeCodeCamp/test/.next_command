@@ -80,3 +80,4 @@ code insert_data.sh
 git add insert_data.sh
 code dumpDatabase.sh
 ./insert_data.sh
+./insert_data.sh
