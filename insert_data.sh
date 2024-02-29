@@ -9,8 +9,11 @@ do
 MAJOR_ID=$($PSQL "select major_id from majors where major='$MAJOR'")
 echo $MAJOR_ID
 # if not found
+if [[ -z $MAJOR_ID ]]
+then
 # insert major
 # get new major_id
+fi
 # get course_id 
 #if not found 
 #insert course 
