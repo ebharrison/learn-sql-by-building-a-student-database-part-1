@@ -91,3 +91,4 @@ code courses_test.csv
 __vsc_prompt_cmd_original
 code courses_test.csv
 ./insert_data.sh
+./dumpDatabase.sh
