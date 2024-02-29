@@ -78,3 +78,5 @@ touch insert_data.sh
 chmod +x insert_data.sh
 code insert_data.sh
 git add insert_data.sh
+code dumpDatabase.sh
+./insert_data.sh
