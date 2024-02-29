@@ -13,6 +13,7 @@ if [[ -z $MAJOR_ID ]]
 then
 # insert major
 INSERT_MAJOR_RESULT=$($PSQL "insert into majors(major) values('$MAJOR')")
+echo $INSERT_MAJOR_RESULT
 # get new major_id
 fi
 # get course_id 
