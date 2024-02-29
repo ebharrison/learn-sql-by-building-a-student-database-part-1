@@ -1,4 +1,4 @@
 pg_dump -cC --inserts -U freecodecamp students > students.sql
-git add .
+git add students.sql
 git commit -m "saving dump of database..."
-git push origin master
+git push origin main
