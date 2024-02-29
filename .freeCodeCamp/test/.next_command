@@ -93,3 +93,5 @@ code courses_test.csv
 ./insert_data.sh
 ./dumpDatabase.sh
 ./insert_data.sh
+./dumpDatabase.sh
+./insert_data.sh
