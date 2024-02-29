@@ -87,3 +87,6 @@ declare -p IFS
 ./insert_data.sh
 ./insert_data.sh
 cp courses.csv courses_test.csv
+code courses_test.csv
+__vsc_prompt_cmd_original
+code courses_test.csv
