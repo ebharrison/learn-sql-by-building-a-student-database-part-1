@@ -1,0 +1,44 @@
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+ls --color=auto -al
+code .gitignore
+code .gitignore
+git status
+git remote -v
+git remote remove origin
+git remote -v
+git remove add origin https://github.com/ebharrison/learn-sql-by-building-a-student-database-part-1.git
+git remote add origin https://github.com/ebharrison/learn-sql-by-building-a-student-database-part-1.git
+git remote -v
+touch hi.txt
+git add hi.txt
+git add hi.txt
+git commit -m "test"
+git push origin main
+git clone https://github.com/ebharrison/project.git
+cp project/dumpDatabase.sh project/rebuildDatabase.sh .
+rm -rf project/
+git add dumpDatabase.sh rebuildDatabase.sh
+code dumpDatabase.sh rebuildDatabase.sh
+echo hello SQL
