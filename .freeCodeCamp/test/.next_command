@@ -73,3 +73,5 @@ pg_dump -cC --inserts -U freecodecamp students > students.sql
 git add dumpDatabase.sh
 ./dumpDatabase.sh
 ./dumpDatabase.sh
+./dumpDatabase.sh
+touch insert_data.sh
