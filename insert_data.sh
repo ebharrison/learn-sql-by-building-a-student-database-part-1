@@ -7,7 +7,6 @@ cat courses_test.csv | while IFS="," read MAJOR COURSE
 do
 # get major_id
 MAJOR_ID=$($PSQL "select major_id from majors where major='$MAJOR'")
-echo $MAJOR_ID
 # if not found
 if [[ -z $MAJOR_ID ]]
 then
