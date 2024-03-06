@@ -251,3 +251,4 @@ __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 ./dumpDatabase.sh
 ls --color=auto
 rm students_test.csv
+rm courses_test.csv
