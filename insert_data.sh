@@ -67,7 +67,7 @@ then
   then
     # set to null
     MAJOR_ID=null
-  fiecho $MAJOR_ID
+  fi
 
 # set to null
 # insert student
