@@ -22,10 +22,11 @@ do
       fi
 
       # get new major_id
-    MAJOR_ID=$($PSQL "SELECT major_id FROM majors WHERE major='$MAJOR'")
+      MAJOR_ID=$($PSQL "SELECT major_id FROM majors WHERE major='$MAJOR'")
     fi
 
     # get course_id
+    COURSE_ID=$($PSQL "SELECT course_id FROM courses WHERE course='$COURSE'")
 
     # if not found
 
