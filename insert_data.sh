@@ -18,7 +18,7 @@ do
       INSERT_MAJOR_RESULT=$($PSQL "INSERT INTO majors(major) VALUES('$MAJOR')")
       if [[ $INSERT_MAJOR_RESULT == "INSERT 0 1" ]]
       then
-        echo "Inserted into majors, $MAJOR"
+        echo Inserted into majors, $MAJOR
       fi
 
       # get new major_id
@@ -31,10 +31,12 @@ do
     # if not found
     if [[ -z $COURSE_ID ]]
     then
+      # insert course
+      INSERT_COURSE_RESULT=$($PSQL "INSERT INTO courses(course) VALUES('$COURSE')")
 
-    # insert course
 
-    # get new course_id
+      # get new course_id
+
     fi
 
     # insert into majors_courses
